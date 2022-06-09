@@ -1,0 +1,10 @@
+.searchbar {
+  display: inline-grid;
+  grid-gap: 20px;
+}
+
+@media (min-width: 480px) {
+  .searchbar {
+    grid-template-columns: 1fr auto;
+  }
+}

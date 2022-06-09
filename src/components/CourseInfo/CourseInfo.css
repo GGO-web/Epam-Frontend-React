@@ -1,0 +1,60 @@
+.course-info {
+  border: 2px solid var(--color-green);
+  padding: 10px;
+}
+
+.course-info__title {
+  margin-bottom: 40px;
+  font-size: 36px;
+  text-align: center;
+}
+
+.course-info__courses {
+  position: relative;
+}
+
+.course-info__courses::before {
+  content: "\21AB";
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.course-info__content {
+  display: grid;
+  grid-gap: 20px;
+}
+
+.course-info__content-left {
+  margin: 0;
+}
+
+.course-info__list-item {
+  margin-bottom: 10px;
+}
+
+.course-info__list-author {
+  display: block;
+  margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+  .course-info__title {
+    margin-bottom: 100px;
+  }
+
+  .course-info__content {
+    grid-gap: 40px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .course-info__content-right {
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 480px) {
+  .course-info {
+    border: none;
+    padding: 0;
+  }
+}

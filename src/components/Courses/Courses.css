@@ -1,0 +1,29 @@
+.course-top {
+  display: grid;
+  align-items: flex-end;
+  grid-gap: 20px;
+  margin-bottom: 20px;
+}
+
+.course-list {
+  display: grid;
+  grid-gap: 30px;
+  padding: 20px 0;
+}
+
+.course__create {
+  display: block;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .course-top {
+    grid-gap: 40px;
+    grid-template-columns: minmax(400px, 1fr) 1fr;
+  }
+
+  .course__create {
+    margin-left: auto;
+    width: auto;
+  }
+}

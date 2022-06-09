@@ -1,0 +1,25 @@
+.header {
+  border: 2px solid peru;
+  border-radius: 5px;
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.header__login {
+  display: flex;
+  align-items: center;
+}
+
+.header__login-name {
+  margin-right: 30px;
+}
+
+.header__login-button {
+  font-size: 16px;
+}
