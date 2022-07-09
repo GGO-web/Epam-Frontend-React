@@ -1,3 +1,10 @@
+### Before you start, you need to start the backend server. To do this, just go to this link and click "▶️ Run" button:
+<a>https://replit.com/@AndyOleksievets/Courses-Backend</a>
+
+### After some time server will run, and you can view the React project:
+<a>https://ggo-web.github.io/Epam-Frontend-React/build</a>
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +75,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
