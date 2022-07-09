@@ -11,6 +11,12 @@
   padding: 20px 0;
 }
 
+.course-top__item {
+  display: flex;
+  justify-content: flex-end;
+  align-items: stretch;
+}
+
 .course__create {
   display: block;
   width: 100%;

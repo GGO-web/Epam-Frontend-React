@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 
 import { useSelector } from 'react-redux';
 
@@ -19,7 +19,7 @@ function App() {
 	const user = useSelector((state) => state.user);
 
 	return (
-		<BrowserRouter>
+		<Router>
 			<Routes>
 				<Route
 					path='/registration'
@@ -100,7 +100,7 @@ function App() {
 
 				<Route path='*' element={<Error404></Error404>}></Route>
 			</Routes>
-		</BrowserRouter>
+		</Router>
 	);
 }
 

@@ -55,8 +55,8 @@ const Courses = () => {
 								<div className='course-top__item'>
 									<Link to='/courses/add'>
 										<Button
-											buttonText='Add new course'
 											className='course__create'
+											buttonText='Add new course'
 											data-testid='course__create'
 											onClick={() => prepareNewCourse()}
 										></Button>

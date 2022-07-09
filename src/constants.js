@@ -57,6 +57,6 @@ const mockedAuthorsList = [
 
 export const AUTH_TOKEN = 'authorizationToken';
 
-export const BACKEND_SERVER = 'http://localhost:4000';
+export const BACKEND_SERVER = 'https://courses-backend--andyoleksievets.repl.co';
 
 export { mockedCoursesList, mockedAuthorsList };
