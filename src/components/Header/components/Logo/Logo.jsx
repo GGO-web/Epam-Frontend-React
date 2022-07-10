@@ -4,7 +4,7 @@ import './Logo.css';
 
 export const Logo = () => {
 	return (
-		<a className='logo' data-testid='logo' href='/'>
+		<a className='logo' data-testid='logo' href='./'>
 			<img
 				className='logo__img'
 				src='./logo.svg'
