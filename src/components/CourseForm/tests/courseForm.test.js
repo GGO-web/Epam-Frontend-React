@@ -1,3 +1,4 @@
+/* eslint-disable testing-library/no-node-access */
 import React from 'react';
 
 import { MemoryRouter } from 'react-router-dom';
@@ -72,7 +73,7 @@ describe('Course form component', () => {
 		expect(screen.getByText('Author list is empty')).toBeInTheDocument();
 	});
 
-	it("'Add author' button click should add an author to course authors list", () => {
+	it("'Add author' button click should call useDispatch method", () => {
 		useDispatchMock.mockImplementation(() => jest.fn());
 
 		render(<CourseForm></CourseForm>);

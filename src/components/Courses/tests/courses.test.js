@@ -74,7 +74,7 @@ describe('Courses component', () => {
 	});
 
 	test("CourseForm should be showed after a click on a button 'Add new course'", async () => {
-		const { getByTestId } = render(
+		render(
 			<Routes>
 				<Route path='/courses' element={<Courses></Courses>}></Route>
 				<Route path='/courses/add' element={<CourseForm></CourseForm>}></Route>
@@ -82,7 +82,7 @@ describe('Courses component', () => {
 			{ route: '/courses' }
 		);
 
-		fireEvent.click(getByTestId('course__create'));
+		fireEvent.click(screen.getByTestId('course__create'));
 
 		expect(screen.getByTestId('course-form')).toBeInTheDocument();
 		expect(screen.queryByTestId('course__create')).not.toBeInTheDocument();
