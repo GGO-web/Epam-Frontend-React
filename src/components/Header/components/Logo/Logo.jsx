@@ -7,7 +7,7 @@ export const Logo = () => {
       <a className="logo" data-testid="logo" href="#!">
          <img
             className="logo__img"
-            src="/logo.svg"
+            src="logo.svg"
             alt="Logo of the React components site"
          />
          <span className="logo__text">Courses</span>

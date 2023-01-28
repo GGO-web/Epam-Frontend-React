@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Epam-Frontend-React/build/static/css/main.aa8f6465.css",
-    "main.js": "/Epam-Frontend-React/build/static/js/main.bb26d908.js",
-    "index.html": "/Epam-Frontend-React/build/index.html",
-    "main.aa8f6465.css.map": "/Epam-Frontend-React/build/static/css/main.aa8f6465.css.map",
-    "main.bb26d908.js.map": "/Epam-Frontend-React/build/static/js/main.bb26d908.js.map"
+    "main.css": "./static/css/main.aa8f6465.css",
+    "main.js": "./static/js/main.65342628.js",
+    "index.html": "./index.html",
+    "main.aa8f6465.css.map": "./static/css/main.aa8f6465.css.map",
+    "main.65342628.js.map": "./static/js/main.65342628.js.map"
   },
   "entrypoints": [
     "static/css/main.aa8f6465.css",
-    "static/js/main.bb26d908.js"
+    "static/js/main.65342628.js"
   ]
 }

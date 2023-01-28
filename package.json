@@ -2,7 +2,7 @@
   "name": "epam-react-frontend",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://ggo-web.github.io/Epam-Frontend-React/build/",
+  "homepage": "./",
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.1",
     "@testing-library/jest-dom": "^5.16.4",
