@@ -1,8 +1,7 @@
-import { BACKEND_SERVER } from '../../constants';
 import { doLogin, doLogout, doRegistration, getUser } from './actionCreators';
 
 export const makeLogoutRequest = (AuthorizationToken) => async (dispatch) => {
-	const response = await fetch(`${BACKEND_SERVER}/logout`, {
+	const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/logout`, {
 		method: 'DELETE',
 		headers: {
 			'Content-Type': 'application/json',
@@ -16,7 +15,7 @@ export const makeLogoutRequest = (AuthorizationToken) => async (dispatch) => {
 };
 
 export const makeGetUserRequest = (AuthorizationToken) => async (dispatch) => {
-	const response = await fetch(`${BACKEND_SERVER}/users/me`, {
+	const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/users/me`, {
 		method: 'GET',
 		headers: {
 			'Content-Type': 'application/json',
@@ -32,7 +31,7 @@ export const makeGetUserRequest = (AuthorizationToken) => async (dispatch) => {
 };
 
 export const makeRegistrationRequest = (registration) => async (dispatch) => {
-	const response = await fetch(`${BACKEND_SERVER}/register`, {
+	const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/register`, {
 		method: 'POST',
 		body: JSON.stringify(registration),
 		headers: {
@@ -51,7 +50,7 @@ export const makeRegistrationRequest = (registration) => async (dispatch) => {
 };
 
 export const makeLoginRequest = (login) => async (dispatch) => {
-	const response = await fetch(`${BACKEND_SERVER}/login`, {
+	const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/login`, {
 		method: 'POST',
 		body: JSON.stringify(login),
 		headers: {

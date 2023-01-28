@@ -1,7 +1,5 @@
-import { BACKEND_SERVER } from './constants';
-
 export const gettingCourses = () => {
-	return fetch(`${BACKEND_SERVER}/courses/all`)
+	return fetch(`${process.env.REACT_APP_BACKEND_URL}/courses/all`)
 		.then((response) => response.json())
 		.then((result) => {
 			return result.result;
@@ -12,7 +10,7 @@ export const gettingCourses = () => {
 };
 
 export const gettingAuthors = () => {
-	return fetch(`${BACKEND_SERVER}/authors/all`)
+	return fetch(`${process.env.REACT_APP_BACKEND_URL}/authors/all`)
 		.then((response) => response.json())
 		.then((result) => {
 			return result.result;

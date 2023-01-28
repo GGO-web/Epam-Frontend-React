@@ -1,11 +1,8 @@
 {
-  "name": "async-redux",
-  "version": "0.1.0",
+  "name": "epam-react-frontend",
+  "version": "1.0.0",
   "private": true,
   "homepage": "./",
-  "repository": {
-    "url": "git@gitlab.com:aandriy335/fl-18.git"
-  },
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.1",
     "@testing-library/jest-dom": "^5.16.4",
@@ -26,7 +23,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "test:nowatch": "react-scripts test --watchAll=false",
-    "prepare": "cd ../../ && husky install React-Fundamentals/react-tests/.husky/",
+    "prepare": "husky install .husky/",
     "prepublish": "npm run eslint:fix && npm run test:nowatch",
     "eslint": "eslint --ext .js --ext .jsx src",
     "eslint:fix": "eslint --fix --ext .js --ext .jsx src"
